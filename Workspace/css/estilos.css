@@ -1,0 +1,345 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7DCB9; 
+}
+header{
+    background-color: #B99470;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+header ul li{
+    margin: 0 10px;
+}
+header ul li a{
+  color: black;
+  text-decoration: none;
+
+}
+#logo{
+    width: 8%;
+    height: auto;
+}
+.imgSl{
+    width: 30%;
+    height: auto;
+    
+}
+.carousel-inner img {
+  max-width: 30%; /* Limita el ancho al 40% del contenedor */
+  height: auto; /* Mantiene la proporción */
+  max-height: 500px; /* Limita la altura máxima */
+  margin: 0 auto;
+  object-fit: cover; 
+  display: flex;
+  border-radius: 20%;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+}
+.carousel .active {
+  background-color: transparent;  
+}
+.carousel-indicators [data-bs-target] {
+  background-color: #914F1E; /* Cambia este color por el que desees para los indicadores no activos */
+}
+
+.carousel-indicators .active {
+  background-color: #04AA6D; /* Cambia este color por el que desees para el indicador activo */
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(100%) sepia(60%) saturate(500%) hue-rotate(10deg);
+}
+
+
+#tituC{
+  text-align: center;
+  font-family:'Franklin Gothic Medium';
+  font-size: 40px;
+  padding: 10px;
+}
+
+
+#categorias{
+    width: 100%;
+    display: flex;
+}
+.cardCad{
+    width: 100%;
+    margin: 50px 10px;
+}
+.cardCad img{
+    width: 65%; 
+    height: auto;
+    margin-left: 65px;
+}
+.cardCad a {
+  text-decoration: none; /* Quita el subrayado predeterminado del enlace */
+}
+
+.cardCad a h2{
+  text-align: center;
+  color: #914F1E; /* Color del texto */
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+  border-bottom: 2px solid #914F1E; /* Agrega la línea inferior personalizada */
+}
+.cardCad a:hover h2 {
+  border-bottom-color: #B5C18E; /* Cambia el color de la línea al pasar el ratón por encima */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background: #914F1E;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #B5C18E;
+    color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Add a black background color to the top navigation 
+.topnav {
+    background: #914F1E;
+    overflow: hidden;
+    border-radius: 30px;
+    width: 680px;
+    height:52px;
+    display: flex;
+    justify-content: space-between; /* Espaciar los elementos a lo largo del contenedor 
+    align-items: center;
+  }
+  
+  /* Style the links inside the navigation bar
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+  }
+  
+  /* Add an active class to highlight the current page
+  .active {
+    background-color: #B5C18E;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens
+  .topnav .icon {
+    display: none;
+  }
+   
+  /* Add a dark background on topnav links and the dropdown button on hover 
+  .topnav a:hover {
+    background-color: #DEAC80;
+    color: black;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) 
+  @media screen and (max-width: 910px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav{
+      width: 300px;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) 
+  @media screen and (max-width: 910px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }*/
+
+  .btnCustom{
+    background: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+    border: none;
+  }
+  footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div{
+    margin: 0 auto;
+  }
+  footer div i{
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  .card img {
+    height: 80%; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantiene el contenido centrado y recorta el resto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.card-title {
+    font-weight: bold;
+    color: #914F1E; /* Color del título */
+}
+
+.card-text {
+    color: #333; /* Color del texto */
+    font-size: 16px;
+}
+h2, h3 {
+  color: #914F1E; /* Cambia el color de los títulos */
+  font-weight: bold;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #B5C18E;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #914F1E; /* Cambia el color del botón al pasar el mouse */
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 80%; /* Ajusta el tamaño deseado de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+  margin-left: 35px;
+}
+.card-img-top2 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 40%; /* Ajusta el tamaño deseado de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 15px;
+  margin-bottom: 5px; /* Espacio debajo de la imagen */
+  margin-left: 130px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #914F1E;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+h2, h3 {
+  color: #914F1E;
+}
+
+
+  

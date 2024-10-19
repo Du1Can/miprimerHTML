@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <!-- Esta seccion, "head", comunica con navegadores,
+     buscadores y otros, informacion tras bambalinas-->
+    <meta charset="UTF-8"> <!--acepte acentos, programacion occidental-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PRIMER HTML5</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--Esta seccion es la parte visible de la pagina-->
+    <header>
+        <!-- Este es el encabezado de la pagina y solo puede haber un 
+         encabezado en cada pagina-->
+        <img id="logo" src="img/logo.png" alt="logitipo de la marca">
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="productos.html">Productos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+          </div>
+        <div>
+            <button class="btnCustom"><i class="bi bi-search"></i></button>
+            <button class="btnCustom"><i class="bi bi-person-fill"></i></button>
+            <button class="btnCustom"><i class="bi bi-whatsapp"></i></button>
+        </div>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  src="img/prensa-francesa.png" class="d-block" alt="pato">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/cafe-para-llevar.png" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/cafe.png" class="d-grid" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- 
+        <div id="slider">
+            <img class="imgSl" src="img/pato.png" alt="pato">
+        </div>-->
+        <section style="width: 100%">
+            <h1 id="tituC">Conoce nuestros productos</h1>
+            <div id="categorias">
+                <div class="cardCad">
+                    <a href="productos.html">
+                        <img src="img/categorias/expresso.png" alt="">
+                        <h2>Café</h2>
+                    </a>
+                </div>
+                <div class="cardCad" >
+                    <a href="productos.html">
+                        <img src="img/categorias/brownies.png" alt="">
+                        <h2>Postres</h2>
+                    </a>
+                </div>
+                <div class="cardCad">
+                    <a href="productos.html">
+                        <img src="img/categorias/cafefrio.png" alt="">
+                        <h2>Café frío</h2>
+                    </a>
+                </div>
+                <div class="cardCad">
+                    <a href="productos.html">
+                        <img id="imgcrep" src="img/categorias/cafehelado.png" alt="" >
+                        <h2>Frappé</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--Investigar: diseño responsivo, movile fisrt, boxmodel-->
+    </main>
+    <footer class="d-flex align-middle">
+        <div>Copyright © 2024 - Creado por WingWeb</div>
+        <div class="div">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14576.756289965942!2d-104.65982087511686!3d24.024396894883292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb7c4a8a1b419%3A0x540db05b84d37014!2sInstituto%20Tecnol%C3%B3gico%20De%20Durango!5e0!3m2!1ses!2smx!4v1727977794945!5m2!1ses!2smx" width="100%" height="100px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="div">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</html>
+<!-- &nbsp espacio en blanco <br> salto de linea-->
+ <!--DOM BUSCAR-->
